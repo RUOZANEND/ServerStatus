@@ -1,16 +1,16 @@
 OUT = sergate
 
-#CC = clang
-CC = gcc
+CC = clang
+#CC = gcc
 CFLAGS = -Wall -O2
 
-#CXX = clang++
-CXX = g++
+CXX = clang++
+#CXX = g++
 CXXFLAGS = -Wall -O2
 
 ODIR = obj
 SDIR = src
-LIBS = -pthread -lm
+LIBS = -static
 INC = -Iinclude
 
 C_SRCS := $(wildcard $(SDIR)/*.c)
